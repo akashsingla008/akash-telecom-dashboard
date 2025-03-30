@@ -583,10 +583,33 @@ def main():
         display_statistics(records_df)
         
         # Show sample records and provide download option
-        with st.expander("View Sample Data"):
-            # Convert to string format to avoid Arrow issues
-            sample_df = records_df.head(5).astype(str)
-            st.dataframe(sample_df, use_container_width=True, hide_index=True)
+        with st.expander("View Data"):
+            # Add a radio button to select sample or all data
+            view_option = st.radio("Select data to view:", ["Sample (5 records)", "All Records"], horizontal=True)
+            
+            if view_option == "Sample (5 records)":
+                # Convert to string format to avoid Arrow issues
+                sample_df = records_df.head(5).astype(str)
+                st.dataframe(sample_df, use_container_width=True, hide_index=True)
+            else:
+                # Add pagination to view all records
+                page_size = st.slider("Records per page:", min_value=10, max_value=100, value=20, step=10)
+                total_pages = (len(records_df) + page_size - 1) // page_size
+                
+                col1, col2, col3 = st.columns([1, 3, 1])
+                with col2:
+                    page_num = st.number_input("Page:", min_value=1, max_value=total_pages, value=1)
+                
+                # Calculate start and end indices
+                start_idx = (page_num - 1) * page_size
+                end_idx = min(start_idx + page_size, len(records_df))
+                
+                # Display page information
+                st.write(f"Showing records {start_idx+1} to {end_idx} of {len(records_df)}")
+                
+                # Show data for current page
+                current_page_df = records_df.iloc[start_idx:end_idx].astype(str)
+                st.dataframe(current_page_df, use_container_width=True, hide_index=True)
             
             st.write("Download options:")
             # Add download button for the full dataset
