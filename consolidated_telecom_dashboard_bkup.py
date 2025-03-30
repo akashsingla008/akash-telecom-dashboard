@@ -40,8 +40,7 @@ st.set_page_config(
 # Function to format customer insight text
 def format_insight_text(text):
     """
-    Format customer insight text by adding proper spacing to run-together words.
-    Uses both pattern matching and regular expressions for comprehensive formatting.
+    Enhanced formatting for customer insight text with more comprehensive pattern matching
     """
     if not text:
         return ""
@@ -51,6 +50,7 @@ def format_insight_text(text):
         # Format sections related to CLTV
         ("CLTV)", "CLTV) "),
         ("CLTV)shows", "CLTV) shows"),
+        ("CLTV ", "CLTV "),
         
         # Format churn risk sections
         ("showsmoderate", "shows moderate"),
@@ -69,9 +69,16 @@ def format_insight_text(text):
         ("withvalue", "with value"),
         ("receivedfor", "received for"),
         ("forthe", "for the"),
+        ("planincluding", "plan including"),
+        ("datadownload", "data download"),
+        ("minutesand", "minutes and"),
+        ("featurelimitations", "feature limitations"),
         
         # Fix spacing around punctuation
         (".The", ". The"),
+        (").", "). "),
+        (".).", ". "),
+        (";", "; "),
     ]
     
     # Apply all specific patterns
@@ -85,6 +92,15 @@ def format_insight_text(text):
     
     # Add space between number and opening parenthesis
     text = re.sub(r'(\d)\(', r'\1 (', text)
+    
+    # Add space between number and GB
+    text = re.sub(r'(\d)GB', r'\1 GB', text)
+    
+    # Fix spacing around $/currencies
+    text = re.sub(r'\$(\d)', r'$ \1', text)
+    
+    # Add space after commas if followed by a non-space
+    text = re.sub(r',([^\s])', r', \1', text)
     
     # Clean up any double spaces that might have been introduced
     text = re.sub(r'\s{2,}', ' ', text)
