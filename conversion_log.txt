@@ -19,3 +19,54 @@
 2025-03-30 10:20:07,231 - INFO - Created JSON for customer 09IK-2EJ0P
 2025-03-30 10:20:07,233 - INFO - Created JSON for customer 3JAB-DRW5S
 2025-03-30 10:20:07,234 - INFO - Conversion completed. Output files stored in tmf717_output
+2025-04-01 07:54:31,933 - INFO - Created JSON for customer W64S-2D12T
+2025-04-01 07:54:31,937 - INFO - Conversion completed. Output files stored in C:\Users\SINGLA~1.NOV\AppData\Local\Temp\tmp_wl0cd92
+2025-04-01 07:54:47,328 - INFO - Created JSON for customer ZPMQ-SGTG3
+2025-04-01 07:54:47,329 - INFO - Conversion completed. Output files stored in C:\Users\SINGLA~1.NOV\AppData\Local\Temp\tmpi0x79hyd
+2025-04-01 07:54:53,146 - INFO - Created JSON for customer ZPMQ-SGTG3
+2025-04-01 07:54:53,147 - INFO - Conversion completed. Output files stored in C:\Users\SINGLA~1.NOV\AppData\Local\Temp\tmp86ogidk9
+2025-04-01 07:54:53,341 - INFO - Created JSON for customer W64S-2D12T
+2025-04-01 07:54:53,343 - INFO - Created JSON for customer ZPMQ-SGTG3
+2025-04-01 07:54:53,346 - INFO - Created JSON for customer ROAP-9EV3X
+2025-04-01 07:54:53,356 - INFO - Created JSON for customer 1XRG-T32WC
+2025-04-01 07:54:53,359 - INFO - Created JSON for customer E84Y-X5Q95
+2025-04-01 07:54:53,361 - INFO - Created JSON for customer 8TWZ-QOPO4
+2025-04-01 07:54:53,363 - INFO - Created JSON for customer SC9L-MI27N
+2025-04-01 07:54:53,366 - INFO - Created JSON for customer DX42-IK1AT
+2025-04-01 07:54:53,368 - INFO - Created JSON for customer 16VU-CKF7O
+2025-04-01 07:54:53,370 - INFO - Created JSON for customer ZPXX-4PF80
+2025-04-01 07:54:53,372 - INFO - Created JSON for customer 552Q-H2V5B
+2025-04-01 07:54:53,375 - INFO - Created JSON for customer SQ8O-6CB7P
+2025-04-01 07:54:53,378 - INFO - Created JSON for customer DJDF-D00K6
+2025-04-01 07:54:53,382 - INFO - Created JSON for customer IQPT-IURF3
+2025-04-01 07:54:53,385 - INFO - Created JSON for customer B4PB-LGGIH
+2025-04-01 07:54:53,388 - INFO - Created JSON for customer KCRN-GJFKI
+2025-04-01 07:54:53,390 - INFO - Created JSON for customer B2AV-4MHML
+2025-04-01 07:54:53,392 - INFO - Created JSON for customer SWKQ-O6GR3
+2025-04-01 07:54:53,394 - INFO - Created JSON for customer QB3H-VFG4R
+2025-04-01 07:54:53,396 - INFO - Created JSON for customer DGCN-AO1FX
+2025-04-01 07:54:53,399 - INFO - Created JSON for customer AJF0-PFT7Y
+2025-04-01 07:54:53,404 - INFO - Created JSON for customer 3ICI-95SS6
+2025-04-01 07:54:53,405 - INFO - Created JSON for customer ZJU2-19OXZ
+2025-04-01 07:54:53,408 - INFO - Created JSON for customer 52NR-7UJFU
+2025-04-01 07:54:53,409 - INFO - Created JSON for customer YBXS-6784C
+2025-04-01 07:54:53,411 - INFO - Created JSON for customer EBDK-7X6IE
+2025-04-01 07:54:53,412 - INFO - Created JSON for customer MKKQ-OMGJ4
+2025-04-01 07:54:53,413 - INFO - Created JSON for customer 7C54-4IG2Y
+2025-04-01 07:54:53,415 - INFO - Created JSON for customer B4GX-XPZJK
+2025-04-01 07:54:53,417 - INFO - Created JSON for customer YV7F-6QRND
+2025-04-01 07:54:53,418 - INFO - Conversion completed. Output files stored in tmf717_output
+2025-04-01 07:55:30,358 - INFO - Created JSON for customer ZPMQ-SGTG3
+2025-04-01 07:55:30,359 - INFO - Conversion completed. Output files stored in C:\Users\SINGLA~1.NOV\AppData\Local\Temp\tmpfdc67ja4
+2025-04-01 08:01:24,122 - INFO - Created JSON for customer O0N8-V41N0
+2025-04-01 08:01:24,125 - INFO - Conversion completed. Output files stored in C:\Users\SINGLA~1.NOV\AppData\Local\Temp\tmpar8fi4nd
+2025-04-01 08:02:03,331 - INFO - Created JSON for customer O0N8-V41N0
+2025-04-01 08:02:03,333 - INFO - Conversion completed. Output files stored in C:\Users\SINGLA~1.NOV\AppData\Local\Temp\tmpla9_wc0x
+2025-04-01 08:02:32,227 - INFO - Created JSON for customer O0N8-V41N0
+2025-04-01 08:02:32,228 - INFO - Conversion completed. Output files stored in C:\Users\SINGLA~1.NOV\AppData\Local\Temp\tmptg8165fp
+2025-04-01 08:02:45,073 - INFO - Created JSON for customer O0N8-V41N0
+2025-04-01 08:02:45,074 - INFO - Conversion completed. Output files stored in C:\Users\SINGLA~1.NOV\AppData\Local\Temp\tmppo708g4g
+2025-04-01 08:03:45,775 - INFO - Created JSON for customer ERUU-YQO7O
+2025-04-01 08:03:45,777 - INFO - Conversion completed. Output files stored in C:\Users\SINGLA~1.NOV\AppData\Local\Temp\tmp3xiborjw
+2025-04-01 08:03:52,816 - INFO - Created JSON for customer 80QI-JEYE2
+2025-04-01 08:03:52,817 - INFO - Conversion completed. Output files stored in C:\Users\SINGLA~1.NOV\AppData\Local\Temp\tmp0oufsxo1

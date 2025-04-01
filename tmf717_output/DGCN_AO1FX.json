@@ -1,0 +1,256 @@
+{
+  "id": "DGCN-AO1FX",
+  "href": "/customer360/DGCN-AO1FX",
+  "customerReferredId": "DGCN-AO1FX",
+  "customerReferredName": "Customer 9154238637",
+  "status": "Inactive",
+  "statusReason": "Competitor offered better streaming quality and international options",
+  "accountHierarchy": [
+    {
+      "id": "DGCN-AO1FX",
+      "href": "/account/DGCN-AO1FX",
+      "name": "Main Account",
+      "referredType": "Account"
+    }
+  ],
+  "associatedParty": [
+    {
+      "id": "9154238637",
+      "href": "/individual/9154238637",
+      "role": "MainUser",
+      "name": "Customer 9154238637",
+      "referredType": "Individual"
+    }
+  ],
+  "characteristic": [
+    {
+      "name": "age",
+      "valueType": "number",
+      "value": "31"
+    },
+    {
+      "name": "ageGroup",
+      "valueType": "string",
+      "value": "Young"
+    },
+    {
+      "name": "gender",
+      "valueType": "string",
+      "value": "Female"
+    },
+    {
+      "name": "incomeLevel",
+      "valueType": "string",
+      "value": "Medium"
+    },
+    {
+      "name": "education",
+      "valueType": "string",
+      "value": "College"
+    },
+    {
+      "name": "maritalStatus",
+      "valueType": "string",
+      "value": "Married"
+    },
+    {
+      "name": "vipStatus",
+      "valueType": "string",
+      "value": "N"
+    },
+    {
+      "name": "churnScore",
+      "valueType": "number",
+      "value": "77"
+    },
+    {
+      "name": "churnStatus",
+      "valueType": "string",
+      "value": "Churned"
+    },
+    {
+      "name": "cltv",
+      "valueType": "number",
+      "value": "5807"
+    },
+    {
+      "name": "satisfactionScore",
+      "valueType": "number",
+      "value": "2"
+    },
+    {
+      "name": "noOfLines",
+      "valueType": "number",
+      "value": "4"
+    },
+    {
+      "name": "atRiskCustomer",
+      "valueType": "boolean",
+      "value": false
+    },
+    {
+      "name": "numberOfComplaints",
+      "valueType": "number",
+      "value": "3"
+    },
+    {
+      "name": "relationshipLengthMonths",
+      "valueType": "number",
+      "value": "27"
+    },
+    {
+      "name": "timeSinceLastEngagementMonths",
+      "valueType": "number",
+      "value": "4"
+    },
+    {
+      "name": "usagePeriod",
+      "valueType": "object",
+      "value": {
+        "from": "01-Jan-25",
+        "to": "31-Jan-25"
+      }
+    },
+    {
+      "name": "dataUploadGB",
+      "valueType": "number",
+      "value": "19.49"
+    },
+    {
+      "name": "dataDownloadGB",
+      "valueType": "number",
+      "value": "119.36"
+    },
+    {
+      "name": "voiceMinutes",
+      "valueType": "number",
+      "value": "373"
+    },
+    {
+      "name": "smsCount",
+      "valueType": "number",
+      "value": "70"
+    },
+    {
+      "name": "roamingVoiceMinutes",
+      "valueType": "number",
+      "value": "47"
+    },
+    {
+      "name": "roamingDataUploadGB",
+      "valueType": "number",
+      "value": "1.45"
+    },
+    {
+      "name": "roamingDataDownloadGB",
+      "valueType": "number",
+      "value": "1.11"
+    },
+    {
+      "name": "roamingSmsCount",
+      "valueType": "number",
+      "value": "25"
+    },
+    {
+      "name": "ottUsageGB",
+      "valueType": "number",
+      "value": "24.05"
+    },
+    {
+      "name": "cloudStorage",
+      "valueType": "number",
+      "value": "0"
+    },
+    {
+      "name": "ratingGroup",
+      "valueType": "string",
+      "value": "Google"
+    },
+    {
+      "name": "planType",
+      "valueType": "string",
+      "value": "voice and data"
+    },
+    {
+      "name": "businessType",
+      "valueType": "string",
+      "value": "prepaid"
+    },
+    {
+      "name": "marketSegment",
+      "valueType": "string",
+      "value": "General"
+    },
+    {
+      "name": "customerType",
+      "valueType": "string",
+      "value": "Individual"
+    },
+    {
+      "name": "price",
+      "valueType": "number",
+      "value": "40.0"
+    },
+    {
+      "name": "activationFee",
+      "valueType": "number",
+      "value": "35"
+    },
+    {
+      "name": "contract",
+      "valueType": "string",
+      "value": "N"
+    },
+    {
+      "name": "location",
+      "valueType": "string",
+      "value": "Dallas"
+    },
+    {
+      "name": "churnReason",
+      "valueType": "string",
+      "value": "Competitor offered better streaming quality and international options"
+    }
+  ],
+  "relatedEntity": [
+    {
+      "id": "POCH045",
+      "href": "/productOffering/POCH045",
+      "role": "SubscribedPlan",
+      "name": "5GB Plan",
+      "referredType": "ProductOffering"
+    },
+    {
+      "id": "9154238637",
+      "href": "/productInstance/9154238637",
+      "role": "SubscribedProduct",
+      "name": "Mobile Service",
+      "referredType": "Product"
+    }
+  ],
+  "relatedParty": [
+    {
+      "id": "9154238637",
+      "href": "/individual/9154238637",
+      "role": "owner",
+      "name": "Customer 9154238637",
+      "referredType": "Individual"
+    }
+  ],
+  "contactMedium": [
+    {
+      "mediumType": "mobileNumber",
+      "preferred": true,
+      "characteristic": {
+        "phoneNumber": "9154238637"
+      }
+    }
+  ],
+  "validFor": {
+    "startDateTime": "22-Aug-22",
+    "endDateTime": "20-Nov-24"
+  },
+  "@baseType": "Customer360",
+  "@schemaLocation": "https://tmforum.org/oda/open-apis/Customer360-v4.0.0.json",
+  "@type": "Customer360"
+}

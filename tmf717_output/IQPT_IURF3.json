@@ -1,0 +1,251 @@
+{
+  "id": "IQPT-IURF3",
+  "href": "/customer360/IQPT-IURF3",
+  "customerReferredId": "IQPT-IURF3",
+  "customerReferredName": "Customer 9134315028",
+  "status": "Active",
+  "statusReason": "At Risk of Churn",
+  "accountHierarchy": [
+    {
+      "id": "IQPT-IURF3",
+      "href": "/account/IQPT-IURF3",
+      "name": "Main Account",
+      "referredType": "Account"
+    }
+  ],
+  "associatedParty": [
+    {
+      "id": "9134315028",
+      "href": "/individual/9134315028",
+      "role": "MainUser",
+      "name": "Customer 9134315028",
+      "referredType": "Individual"
+    }
+  ],
+  "characteristic": [
+    {
+      "name": "age",
+      "valueType": "number",
+      "value": "38"
+    },
+    {
+      "name": "ageGroup",
+      "valueType": "string",
+      "value": "Middle Aged"
+    },
+    {
+      "name": "gender",
+      "valueType": "string",
+      "value": "Female"
+    },
+    {
+      "name": "incomeLevel",
+      "valueType": "string",
+      "value": "Medium"
+    },
+    {
+      "name": "education",
+      "valueType": "string",
+      "value": "College"
+    },
+    {
+      "name": "maritalStatus",
+      "valueType": "string",
+      "value": "Married"
+    },
+    {
+      "name": "vipStatus",
+      "valueType": "string",
+      "value": "N"
+    },
+    {
+      "name": "churnScore",
+      "valueType": "number",
+      "value": "74"
+    },
+    {
+      "name": "churnStatus",
+      "valueType": "string",
+      "value": "At Risk"
+    },
+    {
+      "name": "cltv",
+      "valueType": "number",
+      "value": "5793"
+    },
+    {
+      "name": "satisfactionScore",
+      "valueType": "number",
+      "value": "3"
+    },
+    {
+      "name": "noOfLines",
+      "valueType": "number",
+      "value": "4"
+    },
+    {
+      "name": "atRiskCustomer",
+      "valueType": "boolean",
+      "value": true
+    },
+    {
+      "name": "numberOfComplaints",
+      "valueType": "number",
+      "value": "3"
+    },
+    {
+      "name": "relationshipLengthMonths",
+      "valueType": "number",
+      "value": "38"
+    },
+    {
+      "name": "timeSinceLastEngagementMonths",
+      "valueType": "number",
+      "value": "0"
+    },
+    {
+      "name": "usagePeriod",
+      "valueType": "object",
+      "value": {
+        "from": "01-Jan-25",
+        "to": "31-Jan-25"
+      }
+    },
+    {
+      "name": "dataUploadGB",
+      "valueType": "number",
+      "value": "17.9"
+    },
+    {
+      "name": "dataDownloadGB",
+      "valueType": "number",
+      "value": "89.75"
+    },
+    {
+      "name": "voiceMinutes",
+      "valueType": "number",
+      "value": "251"
+    },
+    {
+      "name": "smsCount",
+      "valueType": "number",
+      "value": "79"
+    },
+    {
+      "name": "roamingVoiceMinutes",
+      "valueType": "number",
+      "value": "0"
+    },
+    {
+      "name": "roamingDataUploadGB",
+      "valueType": "number",
+      "value": "0.0"
+    },
+    {
+      "name": "roamingDataDownloadGB",
+      "valueType": "number",
+      "value": "0.0"
+    },
+    {
+      "name": "roamingSmsCount",
+      "valueType": "number",
+      "value": "0"
+    },
+    {
+      "name": "ottUsageGB",
+      "valueType": "number",
+      "value": "10.74"
+    },
+    {
+      "name": "cloudStorage",
+      "valueType": "number",
+      "value": "0"
+    },
+    {
+      "name": "ratingGroup",
+      "valueType": "string",
+      "value": "Youtube"
+    },
+    {
+      "name": "planType",
+      "valueType": "string",
+      "value": "voice and data"
+    },
+    {
+      "name": "businessType",
+      "valueType": "string",
+      "value": "prepaid"
+    },
+    {
+      "name": "marketSegment",
+      "valueType": "string",
+      "value": "General"
+    },
+    {
+      "name": "customerType",
+      "valueType": "string",
+      "value": "Family & CUG"
+    },
+    {
+      "name": "price",
+      "valueType": "number",
+      "value": "55.0"
+    },
+    {
+      "name": "activationFee",
+      "valueType": "number",
+      "value": "35"
+    },
+    {
+      "name": "contract",
+      "valueType": "string",
+      "value": "N"
+    },
+    {
+      "name": "location",
+      "valueType": "string",
+      "value": "Dallas"
+    }
+  ],
+  "relatedEntity": [
+    {
+      "id": "POCH026",
+      "href": "/productOffering/POCH026",
+      "role": "SubscribedPlan",
+      "name": "Infinite Ultimate",
+      "referredType": "ProductOffering"
+    },
+    {
+      "id": "9134315028",
+      "href": "/productInstance/9134315028",
+      "role": "SubscribedProduct",
+      "name": "Mobile Service",
+      "referredType": "Product"
+    }
+  ],
+  "relatedParty": [
+    {
+      "id": "9134315028",
+      "href": "/individual/9134315028",
+      "role": "owner",
+      "name": "Customer 9134315028",
+      "referredType": "Individual"
+    }
+  ],
+  "contactMedium": [
+    {
+      "mediumType": "mobileNumber",
+      "preferred": true,
+      "characteristic": {
+        "phoneNumber": "9134315028"
+      }
+    }
+  ],
+  "validFor": {
+    "startDateTime": "10-Feb-22",
+    "endDateTime": null
+  },
+  "@baseType": "Customer360",
+  "@schemaLocation": "https://tmforum.org/oda/open-apis/Customer360-v4.0.0.json",
+  "@type": "Customer360"
+}

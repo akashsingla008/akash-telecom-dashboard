@@ -1,0 +1,256 @@
+{
+  "id": "YBXS-6784C",
+  "href": "/customer360/YBXS-6784C",
+  "customerReferredId": "YBXS-6784C",
+  "customerReferredName": "Customer 9133840606",
+  "status": "Inactive",
+  "statusReason": "Network coverage and speed issues in their location",
+  "accountHierarchy": [
+    {
+      "id": "YBXS-6784C",
+      "href": "/account/YBXS-6784C",
+      "name": "Main Account",
+      "referredType": "Account"
+    }
+  ],
+  "associatedParty": [
+    {
+      "id": "9133840606",
+      "href": "/individual/9133840606",
+      "role": "MainUser",
+      "name": "Customer 9133840606",
+      "referredType": "Individual"
+    }
+  ],
+  "characteristic": [
+    {
+      "name": "age",
+      "valueType": "number",
+      "value": "38"
+    },
+    {
+      "name": "ageGroup",
+      "valueType": "string",
+      "value": "Middle Aged"
+    },
+    {
+      "name": "gender",
+      "valueType": "string",
+      "value": "Female"
+    },
+    {
+      "name": "incomeLevel",
+      "valueType": "string",
+      "value": "Medium"
+    },
+    {
+      "name": "education",
+      "valueType": "string",
+      "value": "College"
+    },
+    {
+      "name": "maritalStatus",
+      "valueType": "string",
+      "value": "Married"
+    },
+    {
+      "name": "vipStatus",
+      "valueType": "string",
+      "value": "N"
+    },
+    {
+      "name": "churnScore",
+      "valueType": "number",
+      "value": "95"
+    },
+    {
+      "name": "churnStatus",
+      "valueType": "string",
+      "value": "Churned"
+    },
+    {
+      "name": "cltv",
+      "valueType": "number",
+      "value": "3261"
+    },
+    {
+      "name": "satisfactionScore",
+      "valueType": "number",
+      "value": "3"
+    },
+    {
+      "name": "noOfLines",
+      "valueType": "number",
+      "value": "3"
+    },
+    {
+      "name": "atRiskCustomer",
+      "valueType": "boolean",
+      "value": false
+    },
+    {
+      "name": "numberOfComplaints",
+      "valueType": "number",
+      "value": "2"
+    },
+    {
+      "name": "relationshipLengthMonths",
+      "valueType": "number",
+      "value": "12"
+    },
+    {
+      "name": "timeSinceLastEngagementMonths",
+      "valueType": "number",
+      "value": "5"
+    },
+    {
+      "name": "usagePeriod",
+      "valueType": "object",
+      "value": {
+        "from": "01-Jan-25",
+        "to": "31-Jan-25"
+      }
+    },
+    {
+      "name": "dataUploadGB",
+      "valueType": "number",
+      "value": "16.88"
+    },
+    {
+      "name": "dataDownloadGB",
+      "valueType": "number",
+      "value": "92.45"
+    },
+    {
+      "name": "voiceMinutes",
+      "valueType": "number",
+      "value": "143"
+    },
+    {
+      "name": "smsCount",
+      "valueType": "number",
+      "value": "39"
+    },
+    {
+      "name": "roamingVoiceMinutes",
+      "valueType": "number",
+      "value": "0"
+    },
+    {
+      "name": "roamingDataUploadGB",
+      "valueType": "number",
+      "value": "0.0"
+    },
+    {
+      "name": "roamingDataDownloadGB",
+      "valueType": "number",
+      "value": "0.0"
+    },
+    {
+      "name": "roamingSmsCount",
+      "valueType": "number",
+      "value": "0"
+    },
+    {
+      "name": "ottUsageGB",
+      "valueType": "number",
+      "value": "16.76"
+    },
+    {
+      "name": "cloudStorage",
+      "valueType": "number",
+      "value": "0"
+    },
+    {
+      "name": "ratingGroup",
+      "valueType": "string",
+      "value": "Google"
+    },
+    {
+      "name": "planType",
+      "valueType": "string",
+      "value": "voice and data"
+    },
+    {
+      "name": "businessType",
+      "valueType": "string",
+      "value": "prepaid"
+    },
+    {
+      "name": "marketSegment",
+      "valueType": "string",
+      "value": "students"
+    },
+    {
+      "name": "customerType",
+      "valueType": "string",
+      "value": "Family & CUG"
+    },
+    {
+      "name": "price",
+      "valueType": "number",
+      "value": "57.5"
+    },
+    {
+      "name": "activationFee",
+      "valueType": "number",
+      "value": "35"
+    },
+    {
+      "name": "contract",
+      "valueType": "string",
+      "value": "N"
+    },
+    {
+      "name": "location",
+      "valueType": "string",
+      "value": "Rural California"
+    },
+    {
+      "name": "churnReason",
+      "valueType": "string",
+      "value": "Network coverage and speed issues in their location"
+    }
+  ],
+  "relatedEntity": [
+    {
+      "id": "POCH010",
+      "href": "/productOffering/POCH010",
+      "role": "SubscribedPlan",
+      "name": "Infinite Plus",
+      "referredType": "ProductOffering"
+    },
+    {
+      "id": "9133840606",
+      "href": "/productInstance/9133840606",
+      "role": "SubscribedProduct",
+      "name": "Mobile Service",
+      "referredType": "Product"
+    }
+  ],
+  "relatedParty": [
+    {
+      "id": "9133840606",
+      "href": "/individual/9133840606",
+      "role": "owner",
+      "name": "Customer 9133840606",
+      "referredType": "Individual"
+    }
+  ],
+  "contactMedium": [
+    {
+      "mediumType": "mobileNumber",
+      "preferred": true,
+      "characteristic": {
+        "phoneNumber": "9133840606"
+      }
+    }
+  ],
+  "validFor": {
+    "startDateTime": "01-Oct-23",
+    "endDateTime": "19-Oct-24"
+  },
+  "@baseType": "Customer360",
+  "@schemaLocation": "https://tmforum.org/oda/open-apis/Customer360-v4.0.0.json",
+  "@type": "Customer360"
+}

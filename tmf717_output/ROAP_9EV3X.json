@@ -1,0 +1,256 @@
+{
+  "id": "ROAP-9EV3X",
+  "href": "/customer360/ROAP-9EV3X",
+  "customerReferredId": "ROAP-9EV3X",
+  "customerReferredName": "Customer 9172569454",
+  "status": "Inactive",
+  "statusReason": "Multiple unresolved complaints and poor customer service",
+  "accountHierarchy": [
+    {
+      "id": "ROAP-9EV3X",
+      "href": "/account/ROAP-9EV3X",
+      "name": "Main Account",
+      "referredType": "Account"
+    }
+  ],
+  "associatedParty": [
+    {
+      "id": "9172569454",
+      "href": "/individual/9172569454",
+      "role": "MainUser",
+      "name": "Customer 9172569454",
+      "referredType": "Individual"
+    }
+  ],
+  "characteristic": [
+    {
+      "name": "age",
+      "valueType": "number",
+      "value": "30"
+    },
+    {
+      "name": "ageGroup",
+      "valueType": "string",
+      "value": "Young"
+    },
+    {
+      "name": "gender",
+      "valueType": "string",
+      "value": "Female"
+    },
+    {
+      "name": "incomeLevel",
+      "valueType": "string",
+      "value": "Medium"
+    },
+    {
+      "name": "education",
+      "valueType": "string",
+      "value": "Professional"
+    },
+    {
+      "name": "maritalStatus",
+      "valueType": "string",
+      "value": "Married"
+    },
+    {
+      "name": "vipStatus",
+      "valueType": "string",
+      "value": "N"
+    },
+    {
+      "name": "churnScore",
+      "valueType": "number",
+      "value": "97"
+    },
+    {
+      "name": "churnStatus",
+      "valueType": "string",
+      "value": "Churned"
+    },
+    {
+      "name": "cltv",
+      "valueType": "number",
+      "value": "3334"
+    },
+    {
+      "name": "satisfactionScore",
+      "valueType": "number",
+      "value": "1"
+    },
+    {
+      "name": "noOfLines",
+      "valueType": "number",
+      "value": "1"
+    },
+    {
+      "name": "atRiskCustomer",
+      "valueType": "boolean",
+      "value": false
+    },
+    {
+      "name": "numberOfComplaints",
+      "valueType": "number",
+      "value": "10"
+    },
+    {
+      "name": "relationshipLengthMonths",
+      "valueType": "number",
+      "value": "9"
+    },
+    {
+      "name": "timeSinceLastEngagementMonths",
+      "valueType": "number",
+      "value": "6"
+    },
+    {
+      "name": "usagePeriod",
+      "valueType": "object",
+      "value": {
+        "from": "01-Jan-25",
+        "to": "31-Jan-25"
+      }
+    },
+    {
+      "name": "dataUploadGB",
+      "valueType": "number",
+      "value": "12.86"
+    },
+    {
+      "name": "dataDownloadGB",
+      "valueType": "number",
+      "value": "43.32"
+    },
+    {
+      "name": "voiceMinutes",
+      "valueType": "number",
+      "value": "585"
+    },
+    {
+      "name": "smsCount",
+      "valueType": "number",
+      "value": "198"
+    },
+    {
+      "name": "roamingVoiceMinutes",
+      "valueType": "number",
+      "value": "0"
+    },
+    {
+      "name": "roamingDataUploadGB",
+      "valueType": "number",
+      "value": "0.0"
+    },
+    {
+      "name": "roamingDataDownloadGB",
+      "valueType": "number",
+      "value": "0.0"
+    },
+    {
+      "name": "roamingSmsCount",
+      "valueType": "number",
+      "value": "0"
+    },
+    {
+      "name": "ottUsageGB",
+      "valueType": "number",
+      "value": "12.39"
+    },
+    {
+      "name": "cloudStorage",
+      "valueType": "number",
+      "value": "0"
+    },
+    {
+      "name": "ratingGroup",
+      "valueType": "string",
+      "value": "Youtube"
+    },
+    {
+      "name": "planType",
+      "valueType": "string",
+      "value": "voice and data"
+    },
+    {
+      "name": "businessType",
+      "valueType": "string",
+      "value": "prepaid"
+    },
+    {
+      "name": "marketSegment",
+      "valueType": "string",
+      "value": "Military and veterans"
+    },
+    {
+      "name": "customerType",
+      "valueType": "string",
+      "value": "Family & CUG"
+    },
+    {
+      "name": "price",
+      "valueType": "number",
+      "value": "67.5"
+    },
+    {
+      "name": "activationFee",
+      "valueType": "number",
+      "value": "35"
+    },
+    {
+      "name": "contract",
+      "valueType": "string",
+      "value": "N"
+    },
+    {
+      "name": "location",
+      "valueType": "string",
+      "value": "Las Vegas"
+    },
+    {
+      "name": "churnReason",
+      "valueType": "string",
+      "value": "Multiple unresolved complaints and poor customer service"
+    }
+  ],
+  "relatedEntity": [
+    {
+      "id": "POCH034",
+      "href": "/productOffering/POCH034",
+      "role": "SubscribedPlan",
+      "name": "Infinite Ultimate",
+      "referredType": "ProductOffering"
+    },
+    {
+      "id": "9172569454",
+      "href": "/productInstance/9172569454",
+      "role": "SubscribedProduct",
+      "name": "Mobile Service",
+      "referredType": "Product"
+    }
+  ],
+  "relatedParty": [
+    {
+      "id": "9172569454",
+      "href": "/individual/9172569454",
+      "role": "owner",
+      "name": "Customer 9172569454",
+      "referredType": "Individual"
+    }
+  ],
+  "contactMedium": [
+    {
+      "mediumType": "mobileNumber",
+      "preferred": true,
+      "characteristic": {
+        "phoneNumber": "9172569454"
+      }
+    }
+  ],
+  "validFor": {
+    "startDateTime": "19-Nov-23",
+    "endDateTime": "08-Sep-24"
+  },
+  "@baseType": "Customer360",
+  "@schemaLocation": "https://tmforum.org/oda/open-apis/Customer360-v4.0.0.json",
+  "@type": "Customer360"
+}
