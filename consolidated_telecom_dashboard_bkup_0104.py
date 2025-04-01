@@ -10,25 +10,6 @@ from datetime import datetime
 import base64
 import io
 import re
-import subprocess
-import sys
-import importlib
-import traceback
-
-# Import the data generator module
-# Ensure the data generator is in the same directory or in Python path
-try:
-    from telecom_data_generator import (
-        generate_multiple_records, 
-        save_records_to_csv, 
-        save_insights_to_csv, 
-        get_default_operators,
-        load_plans_from_csv
-    )
-    generator_import_success = True
-except ImportError:
-    generator_import_success = False
-    st.warning("Could not import telecom_data_generator module. Generate data button will not work.")
 
 def add_download_button(df, button_text='Download CSV', filename='data.csv'):
     """
@@ -55,151 +36,6 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
-
-# Function to check if data generation should be limited
-def check_generation_limits():
-    """
-    Check if data generation should be limited based on existing files and time constraints
-    Returns tuple: (allowed, reason)
-    """
-    output_dir = 'output'
-    
-    # Check if output directory exists
-    if not os.path.exists(output_dir):
-        os.makedirs(output_dir)
-        return (True, "")
-    
-    # Get all existing CSV files in the output directory
-    all_files = glob.glob(os.path.join(output_dir, '*.csv'))
-    
-    # Check total number of files (each generation creates 2 files)
-    if len(all_files) >= 40:  # Limit to 20 pairs of files (40 total files)
-        return (False, "Too many data files in the output directory. Please delete some files before generating more.")
-    
-    # Check if we've generated data recently (within the last 2 minutes)
-    current_time = datetime.now()
-    recent_files = []
-    
-    for file_path in all_files:
-        try:
-            # Get file modification time
-            file_mod_time = datetime.fromtimestamp(os.path.getmtime(file_path))
-            time_diff = (current_time - file_mod_time).total_seconds()
-            
-            # If file was created in the last 2 minutes
-            if time_diff < 120:  # 2 minutes in seconds
-                recent_files.append(file_path)
-        except:
-            pass
-    
-    if len(recent_files) >= 2:  # At least one pair of files was created recently
-        return (False, "You've recently generated data. Please wait at least 2 minutes between generations.")
-    
-    return (True, "")
-
-# Function to delete all data files
-def delete_all_data_files():
-    """Delete all CSV files in the output directory"""
-    output_dir = 'output'
-    if not os.path.exists(output_dir):
-        return 0
-        
-    files = glob.glob(os.path.join(output_dir, '*.csv'))
-    count = 0
-    
-    for file_path in files:
-        try:
-            os.remove(file_path)
-            count += 1
-        except:
-            pass
-            
-    return count
-
-# Function to delete older data files, keeping only the specified number of most recent pairs
-def delete_older_data_files(keep_pairs=5):
-    """
-    Delete older data files, keeping only the specified number of most recent pairs
-    Returns the number of files deleted
-    """
-    output_dir = 'output'
-    if not os.path.exists(output_dir):
-        return 0
-        
-    # Get matched pairs
-    matched_pairs = get_matching_csv_files(output_dir)
-    
-    # Sort by timestamp (newest first) - should already be sorted but to be safe
-    matched_pairs = sorted(matched_pairs, key=lambda x: x['timestamp'], reverse=True)
-    
-    # Keep only the specified number of pairs
-    pairs_to_keep = matched_pairs[:keep_pairs]
-    
-    # Get the filenames to keep
-    files_to_keep = set()
-    for pair in pairs_to_keep:
-        files_to_keep.add(os.path.abspath(pair['records_file']))
-        files_to_keep.add(os.path.abspath(pair['insights_file']))
-    
-    # Delete all other files
-    all_files = glob.glob(os.path.join(output_dir, '*.csv'))
-    count = 0
-    
-    for file_path in all_files:
-        abs_path = os.path.abspath(file_path)
-        if abs_path not in files_to_keep:
-            try:
-                os.remove(file_path)
-                count += 1
-            except:
-                pass
-                
-    return count
-
-# Function to generate new data directly from the dashboard
-def generate_fresh_data():
-    """Generate new synthetic telecom data directly from the dashboard"""
-    try:
-        # Check if generation should be limited
-        can_generate, limit_reason = check_generation_limits()
-        if not can_generate:
-            st.error(limit_reason)
-            return
-            
-        with st.spinner("Generating new telecom customer data..."):
-            # Try to load plans from CSV 
-            plan_repo_csv = "syn_new_planrepo_6.csv"
-            try:
-                operators = load_plans_from_csv(plan_repo_csv)
-                st.success(f"Successfully loaded plan data from {plan_repo_csv}")
-            except Exception as e:
-                st.warning(f"Could not load plans from CSV: {str(e)}")
-                operators = get_default_operators()
-                st.info("Using default operators and plans instead")
-            
-            # Generate records with the configured amount
-            record_count = st.session_state.get("generate_record_count", 30)
-            records, insights = generate_multiple_records(record_count, operators)
-            
-            # Save to CSV files
-            records_file = save_records_to_csv(records)
-            insights_file = save_insights_to_csv(insights)
-            
-            # Show success message with details
-            st.success(f"Successfully generated {len(records)} new records!")
-            st.info(f"""
-            Records saved to: {records_file}
-            Insights saved to: {insights_file}
-            
-            Dashboard will refresh to show new data.
-            """)
-            
-            # Trigger a refresh to load new data
-            st.rerun()
-            
-    except Exception as e:
-        st.error(f"Error generating data: {str(e)}")
-        st.code(traceback.format_exc())
 
 # Function to format customer insight text
 def format_insight_text(text):
@@ -686,57 +522,12 @@ def display_customer_details(df, insights_df):
 def main():
     st.title("Telecom Customer Data Analysis Dashboard")
     
-    # Add a sidebar section for data generation
-    with st.sidebar:
-        st.header("Data Generation")
-        
-        # Check if the generator module was imported successfully
-        if generator_import_success:
-            st.write("Generate new synthetic telecom customer data with customizable settings.")
-            
-            # Number of records to generate (limited to 30 max)
-            st.session_state["generate_record_count"] = st.number_input(
-                "Number of records to generate:", 
-                min_value=10, 
-                max_value=30, 
-                value=20,
-                step=5,
-                help="Maximum 30 records can be generated at once to prevent performance issues."
-            )
-            
-            # Generate button that calls the function
-            if st.button("🔄 Generate Fresh Data", 
-                         help="Generate new synthetic telecom customer data with the specified settings"):
-                generate_fresh_data()
-                
-            # Add file management options
-            if st.button("Delete All Generated Files", help="⚠️ This will permanently delete all generated CSV files in the output directory"):
-                try:
-                    file_count = delete_all_data_files()
-                    st.success(f"Successfully deleted {file_count} files from the output directory.")
-                    st.rerun()
-                except Exception as e:
-                    st.error(f"Error deleting files: {str(e)}")
-                    
-            # Add a button to delete older files
-            if st.button("Delete Older Files", help="Keep only the 5 most recent file pairs and delete the rest"):
-                try:
-                    deleted_count = delete_older_data_files(keep_pairs=5)
-                    st.success(f"Successfully deleted {deleted_count} older files, keeping the 5 most recent pairs.")
-                    st.rerun()
-                except Exception as e:
-                    st.error(f"Error deleting older files: {str(e)}")
-                    
-        # Show count of existing files
-        matched_pairs = get_matching_csv_files()
-        st.sidebar.info(f"Currently {len(matched_pairs)} data file pairs in the output directory")
-        
-        st.header("Data Selection")
-        if st.button("🔄 Refresh File List"):
-            # Use the proper method for clearing cache
-            st.cache_data.clear()
-            # Rerun using the current Streamlit method
-            st.rerun()
+    # Add refresh button to manually refresh file list
+    if st.sidebar.button("🔄 Refresh File List"):
+        # Use the proper method for clearing cache
+        st.cache_data.clear()
+        # Rerun using the current Streamlit method
+        st.rerun()
     
     # Get available files with matching timestamps
     matched_pairs = get_matching_csv_files()
@@ -748,6 +539,8 @@ def main():
     
     # Sidebar for file selection
     with st.sidebar:
+        st.header("Data Selection")
+        
         # Format options for display
         file_options = [f"{os.path.basename(pair['records_file'])} ({pair['display_time']})" for pair in matched_pairs]
         
